@@ -137,7 +137,7 @@ Arguments: `err`
 
 A callback to be called when the ping is complete.
 
-##### `worker.on('data', callback)` -> `worker`
+#### `worker.on('data', callback)` -> `worker`
 
 Listens on new data on all active queues.
 
@@ -168,7 +168,7 @@ Arguments: `err`
 
 A callback you *must* call to acknowledge the message. If an error is passed, the message will be [`nack`ed](https://www.rabbitmq.com/nack.html) and either placed into the dead-letter queue or re-queued, depending on your configuration.
 
-##### `worker.on('error', callback)` -> `worker`
+#### `worker.on('error', callback)` -> `worker`
 
 Emitted when the incoming message cannot be parsed. This event *must* be handled or your process will exit when it's emitted.
 
