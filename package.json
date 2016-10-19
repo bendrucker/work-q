@@ -1,0 +1,36 @@
+{
+  "name": "work-q",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Worker queue interface for AMQP",
+  "license": "MIT",
+  "repository": "bendrucker/work-q",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "worker",
+    "queue",
+    "amqp",
+    "rabbit",
+    "rabbitmq",
+    "work"
+  ],
+  "devDependencies": {
+    "run-series": "~1.1.4",
+    "standard": "^7.0.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "index.js",
+    "test.js"
+  ],
+  "dependencies": {
+    "amqplib": "~0.4.2"
+  }
+}
