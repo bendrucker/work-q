@@ -1,7 +1,7 @@
 {
   "name": "work-q",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Worker queue interface for AMQP",
   "license": "MIT",
   "repository": "bendrucker/work-q",
