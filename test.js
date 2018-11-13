@@ -39,7 +39,7 @@ test('listen', function (t) {
   function message (callback) {
     worker.once('data', function (queue, data, done) {
       t.equal(queue, 'zone', 'queue is zone')
-      t.deepEqual(data, {danger: true}, 'zone is one of danger')
+      t.deepEqual(data, { danger: true }, 'zone is one of danger')
       done()
       callback()
     })
@@ -68,12 +68,12 @@ test('nack', function (t) {
   function message (callback) {
     worker.once('data', function (queue, data, done) {
       t.equal(queue, 'zone', 'queue is zone')
-      t.deepEqual(data, {danger: true}, 'zone is one of danger')
+      t.deepEqual(data, { danger: true }, 'zone is one of danger')
 
       worker.once('data', function (queue, data, done) {
         t.pass('re-receives message')
         t.equal(queue, 'zone', 'queue is zone')
-        t.deepEqual(data, {danger: true}, 'zone is one of danger')
+        t.deepEqual(data, { danger: true }, 'zone is one of danger')
         done()
         callback()
       })
