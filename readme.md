@@ -1,4 +1,4 @@
-# work-q [![Build Status](https://travis-ci.org/bendrucker/work-q.svg?branch=master)](https://travis-ci.org/bendrucker/work-q)
+# work-q [![Build Status](https://travis-ci.org/bendrucker/work-q.svg?branch=master)](https://travis-ci.org/bendrucker/work-q) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/work-q.svg)](https://greenkeeper.io/)
 
 > Worker queue interface for [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)
 
