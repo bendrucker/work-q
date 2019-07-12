@@ -8,4 +8,4 @@ before_script:
       --publish 5672:5672 \
       --env RABBITMQ_PID_FILE=/var/lib/rabbitmq/pid \
       rabbitmq:alpine
-  - docker exec rabbitmq rabbitmqctl wait /var/lib/rabbitmq/pid
+  - docker exec rabbitmq rabbitmqctl wait /var/lib/rabbitmq/pid --timeout 30
