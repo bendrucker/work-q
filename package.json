@@ -32,5 +32,8 @@
   ],
   "dependencies": {
     "amqplib": "~0.5.2"
+  },
+  "engines": {
+    "node": ">= 8"
   }
 }
