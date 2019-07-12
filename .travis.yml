@@ -1,6 +1,5 @@
 language: node_js
 node_js:
 - '8'
-sudo: required
-services:
-- rabbitmq
+before_script:
+  - docker run --detach --publish 5672:5672 rabbitmq:alpine 
