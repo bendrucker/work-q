@@ -1,6 +1,11 @@
 language: node_js
 node_js:
 - '8'
-sudo: required
-services:
-- rabbitmq
+before_script:
+  - > 
+    docker run --name rabbitmq  \
+      --detach \
+      --publish 5672:5672 \
+      --env RABBITMQ_PID_FILE=/var/lib/rabbitmq/pid \
+      rabbitmq:alpine
+  - docker exec rabbitmq rabbitmqctl wait /var/lib/rabbitmq/pid --timeout 30
